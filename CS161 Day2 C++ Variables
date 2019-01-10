@@ -8,6 +8,7 @@
 
 #include <iostream> // cout
 #include <iomanip> // fixed, showpoint, setw, setprecision
+#include <string>  //string data type
 using namespace std;
 
 int main()
@@ -20,11 +21,12 @@ int main()
     int day,
         month,
         year;
-    
+    string myName;
     //Initialize variables
     age=20;
     price=12.56789876;
     initial= 'M';
+    myName="Max";
     
     // output variables
     cout << "Age = " << age << endl;
@@ -32,7 +34,7 @@ int main()
     cout << setprecision(4); //makes only show 4 number places in float Price
     cout << "Price = " << price << endl;
     cout << "Initial = " << initial << setw(9) << endl;
-    
+    cout << myName << endl;
     cout << "Max's file location: c:\\desktop\\cs161, jk, on github.";
     
     
