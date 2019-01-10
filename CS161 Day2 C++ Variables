@@ -1,0 +1,42 @@
+/* Filename:    Day2_var_format.cpp
+    Description: Program demonstrates declaration and initialzation
+                of variables, escape sequences & formatting
+    Author: Max Taylor
+    Date:   1/10/19
+    Modifications:
+*/
+
+#include <iostream> // cout
+#include <iomanip> // fixed, showpoint, setw, setprecision
+using namespace std;
+
+int main()
+{
+    //dec variables
+    int age;
+    float price;
+    char initial;
+    
+    int day,
+        month,
+        year;
+    
+    //Initialize variables
+    age=20;
+    price=12.56789876;
+    initial= 'M';
+    
+    // output variables
+    cout << "Age = " << age << endl;
+    cout << fixed << showpoint;
+    cout << setprecision(4); //makes only show 4 number places in float Price
+    cout << "Price = " << price << endl;
+    cout << "Initial = " << initial << setw(9) << endl;
+    
+    cout << "Max's file location: c:\\desktop\\cs161, jk, on github.";
+    
+    
+    
+    
+    return 0;
+}
